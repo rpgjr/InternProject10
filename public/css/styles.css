@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --kfc-red: #a3080c;
+    --kfc-white: #ffffff;
+    --kfc-light-beige: #fff1e2;
+    --kfc-beige: #f5d4b7;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#kfc-logo {
+    height: 50px;
+}
+
+#kfc-text {
+    color: var(--kfc-red);
+    font-size: 30px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--kfc-red);
+    font-size: 16px;
+}
+
+.isactive {
+    color: var(--kfc-red);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
