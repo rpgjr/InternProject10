@@ -24,7 +24,6 @@
                     <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#showAddItem">
                         Add <i class="fa-solid fa-plus"></i>
                     </button>
-                    showDeleteItem
                 </div>
                 <div class="col-12">
                     @include('Menu.add-menu')
