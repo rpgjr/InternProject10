@@ -7,3 +7,6 @@
 {{-- Custom CSS --}}
 <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/kfc-logo.png') }}" />
+
+@livewireStyles
+

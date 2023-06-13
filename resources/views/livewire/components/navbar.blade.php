@@ -13,7 +13,7 @@
             <a class="nav-link @yield('menu-active')" href="{{ route('menu.getMenuHome') }}">Menu</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link @yield('inventory-active')" href="#">Order</a>
+            <a class="nav-link @yield('order-active')" href="{{ route('order.getOrderHome') }}">Order</a>
             </li>
         </div>
     </div>

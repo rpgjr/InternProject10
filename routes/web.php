@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\Menu\ItemController;
-use App\Http\Controllers\Menu\MenuController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,17 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Menu - Pages
+// Menu
 Route::controller(MenuController::class)
     ->name('menu.')
     ->group(function() {
         Route::get('/', 'getMenuHome')->name('getMenuHome');
 });
 
-Route::controller(ItemController::class)
-    ->name('item.')
+Route::controller(OrderController::class)
+    ->name('order.')
     ->group(function() {
-        Route::post('item/add-item', 'addItem')->name('addItem');
-        Route::post('item/edit-item', 'editItem')->name('editItem');
-        Route::post('item/delete-item', 'deleteItem')->name('deleteItem');
+        Route::get('/order', 'getOrderHome')->name('getOrderHome');
 });
